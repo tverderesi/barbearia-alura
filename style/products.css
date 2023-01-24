@@ -1,0 +1,50 @@
+@import 'index.css';
+
+.price {
+  font-weight: 400;
+  color: white;
+}
+
+ul li {
+  color: goldenrod;
+}
+
+ul li:hover h2 {
+  color: white;
+  transition: all ease-in-out;
+  transition-duration: 0.5s;
+}
+
+ul li p.description {
+  color: white;
+  font-weight: 400;
+  margin-left: 1.5rem;
+  text-align: start;
+}
+
+ul.products li {
+  border-radius: 0.5rem;
+  margin: 2rem;
+  padding: 1rem;
+  width: 33%;
+  flex-direction: column;
+  background-color: rgba(184, 135, 11, 0.342);
+  box-shadow: 0 0 20px rgba(31, 29, 29, 0.685);
+  transition: all ease-in-out;
+  transition-duration: 0.5s;
+}
+
+main {
+  width: 80%;
+}
+
+ul.products li:hover {
+  background-color: rgba(187, 137, 10, 0.767);
+  transition: all ease-in-out;
+  transition-duration: 0.5s;
+  font-size: 1.5rem;
+  width: 40%;
+  position: relative;
+  left: 0;
+  z-index: 1;
+}
