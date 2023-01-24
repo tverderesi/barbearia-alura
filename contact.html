@@ -22,7 +22,7 @@
   </head>
   <body>
     <nav
-      class="flex flex-row align-center justify-center bg-gold w-full text-relaxed"
+      class="flex flex-row align-center justify-center bg-gold w-full text-relaxed uppercase"
     >
       <img
         src="media\logo-branco.png"
@@ -36,106 +36,136 @@
       </ul>
     </nav>
     <main class="flex flex-col items-center justify-center my-10">
-      <form class="flex flex-col my-1 mb-9 my-10">
-        <label
-          class="my-1"
-          for="nomesobrenome"
-          >Nome e sobrenome</label
-        >
-        <input
-          type="text"
-          id="nomesobrenome"
-          class="my-1"
-          required
-        />
-
-        <label for="email">Email</label>
-        <input
-          type="email"
-          id="email"
-          class="my-1"
-          required
-        />
-
-        <label for="telefone">Telefone</label>
-        <input
-          type="tel"
-          id="telefone"
-          class="my-1"
-        />
-        <label for="mensagem">Mensagem</label>
-        <textarea
-          cols="70"
-          rows="10"
-          id="mensagem"
-          placeholder="Digite sua mensagem"
-          required
-        ></textarea>
-        <fieldset class="my-1">
-          <legend>Como prefere o nosso contato?</legend>
-          <label for="radio-email">
-            <input
-              type="radio"
-              name="contato"
-              value="email"
-              id="radio-email"
-            />
-            Email
-          </label>
-
-          <label for="radio-telefone">
-            <input
-              type="radio"
-              name="contato"
-              value="telefone"
-              id="radio-telefone"
-            />
-            Telefone
-          </label>
-
+      <div class="flex flex-row">
+        <form class="flex flex-col my-1 mb-9 my-10">
           <label
-            for="radio-whatsapp"
+            for="workingHours"
+            class="text-center"
+            ><h3>Horário de Funcionamento</h3></label
+          >
+          <table id="workingHours">
+            <thead>
+              <tr>
+                <th>Dia</th>
+                <th>Horário</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Segunda</td>
+                <td>8h ~ 20h</td>
+              </tr>
+              <tr>
+                <td>Quarta</td>
+                <td>8h ~ 20h</td>
+              </tr>
+              <tr>
+                <td>Sexta</td>
+                <td>8h ~ 20h</td>
+              </tr>
+            </tbody>
+          </table>
+          <label
+            class="my-1"
+            for="nomesobrenome"
+            >Nome e sobrenome</label
+          >
+          <input
+            type="text"
+            id="nomesobrenome"
+            class="my-1"
+            required
+          />
+
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            class="my-1"
+            required
+          />
+
+          <label for="telefone">Telefone</label>
+          <input
+            type="tel"
+            id="telefone"
+            class="my-1"
+          />
+          <label for="mensagem">Mensagem</label>
+          <textarea
+            cols="70"
+            rows="10"
+            id="mensagem"
+            placeholder="Digite sua mensagem"
+            required
+          ></textarea>
+          <fieldset class="my-1">
+            <legend>Como prefere o nosso contato?</legend>
+            <label for="radio-email">
+              <input
+                type="radio"
+                name="contato"
+                value="email"
+                id="radio-email"
+              />
+              Email
+            </label>
+
+            <label for="radio-telefone">
+              <input
+                type="radio"
+                name="contato"
+                value="telefone"
+                id="radio-telefone"
+              />
+              Telefone
+            </label>
+
+            <label
+              for="radio-whatsapp"
+              checked
+            >
+              <input
+                type="radio"
+                name="contato"
+                value="whatsapp"
+                id="radio-whatsapp"
+              />
+              WhatsApp
+            </label>
+          </fieldset>
+          <fieldset class="my-1 flex flex-row items-center">
+            <legend class="ml-0">
+              Qual horário prefere ser atendido?
+              <select
+                class="ml-0"
+                required
+              >
+                <option>Manhã</option>
+                <option>Tarde</option>
+                <option>Noite</option>
+              </select>
+            </legend>
+          </fieldset>
+          <label
+            class="ml-0"
             checked
           >
             <input
-              type="radio"
-              name="contato"
-              value="whatsapp"
-              id="radio-whatsapp"
-            />
-            WhatsApp
-          </label>
-        </fieldset>
-        <fieldset class="my-1 flex flex-row items-center">
-          <legend class="ml-0">
-            Qual horário prefere ser atendido?
-            <select
+              type="checkbox"
               class="ml-0"
-              required
-            >
-              <option>Manhã</option>
-              <option>Tarde</option>
-              <option>Noite</option>
-            </select>
-          </legend>
-        </fieldset>
-        <label
-          class="ml-0"
-          checked
-        >
-          <input
-            type="checkbox"
-            class="ml-0"
-          />
-          Gostaria de receber nossas novidades por email?
-        </label>
+            />
+            Gostaria de receber nossas novidades por email?
+          </label>
 
-        <input
-          type="submit"
-          value="Enviar formulário"
-          class="my-1"
-        />
-      </form>
+          <input
+            type="submit"
+            value="Enviar formulário"
+            class="my-1"
+          />
+        </form>
+      </div>
+
       <footer
         class="flex flex-row align-center justify-center bg-gold w-screen"
       >

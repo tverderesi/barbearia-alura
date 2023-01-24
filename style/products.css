@@ -37,6 +37,7 @@ ul.products li {
 
 main {
   width: 80%;
+  height: 87vh;
 }
 
 ul.products li:hover {

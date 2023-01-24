@@ -51,22 +51,8 @@ main {
   position: relative;
   top: 8vh;
   height: max(auto, 84vh);
-  margin-top: 9rem;
-}
-
-.banner {
-  padding: 1rem;
-  border-radius: 2rem;
-}
-
-ul {
-  align-self: flex-start;
-}
-.flex {
-  display: flex;
-}
-.flex-row {
-  flex-direction: row;
+  margin: 3rem 0;
+  margin-bottom: 0rem;
 }
 
 a {
@@ -81,38 +67,6 @@ ul.no-dots li {
   font-weight: 200;
 }
 
-.text-relaxed {
-  letter-spacing: 0.1rem;
-}
-
-.uppercase {
-  text-transform: uppercase;
-}
-
-.align-center {
-  align-items: center;
-}
-
-.justify-center {
-  justify-content: center;
-}
-
-.logo {
-  height: 8vh;
-}
-
-.bg-gold {
-  background-color: rgba(218, 165, 32, 0.185);
-}
-
-.w-screen {
-  width: 100vw;
-}
-
-.w-full {
-  width: 100%;
-}
-
 nav {
   margin-top: 0;
   position: fixed;
@@ -122,26 +76,9 @@ nav {
 }
 
 footer {
-  margin-bottom: 0;
   padding: 1rem 0;
   font-size: 0.9rem;
-}
-
-.flex-col {
-  flex-direction: column;
-}
-
-.icon {
-  font-size: 1.4rem;
-  margin-left: 0.7rem;
-}
-
-.my-1 {
-  margin: 0.25rem 0;
-}
-
-.my-10 {
-  margin: 2.5rem;
+  margin-top: 3vh;
 }
 
 input[type='submit'] {
@@ -206,6 +143,63 @@ textarea {
   font-family: 'Poppins', sans-serif;
 }
 
+fieldset {
+  margin: 1rem 0;
+  border: none;
+  padding: 0.25rem 0;
+}
+
+fieldset legend {
+  margin: 1rem 0;
+}
+
+table {
+  text-align: center;
+  border: 1px solid whitesmoke;
+  width: auto;
+  margin: 1rem auto 3rem auto;
+
+  border-collapse: collapse;
+}
+
+tr,
+td {
+  border: 1px solid white;
+}
+tr:nth-child(odd) {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+td {
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+}
+tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.03);
+}
+th {
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+ul {
+  align-self: flex-start;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.text-lg {
+  font-size: 1.5rem;
+}
+
+.prose {
+  padding: 0 2rem;
+}
+
 .w-half {
   width: 50%;
 }
@@ -229,12 +223,91 @@ textarea {
   margin-left: 0;
 }
 
-fieldset {
-  margin: 1rem 0;
-  border: none;
-  padding: 0.25rem 0;
+.flex-col {
+  flex-direction: column;
 }
 
-fieldset legend {
-  margin: 1rem 0;
+.icon {
+  font-size: 1.4rem;
+  margin-left: 0.7rem;
+}
+
+.my-1 {
+  margin: 0.25rem 0;
+}
+
+.my-10 {
+  margin: 2.5rem;
+}
+
+.text-relaxed {
+  letter-spacing: 0.1rem;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.logo {
+  height: 8vh;
+}
+
+.bg-gold {
+  background-color: rgba(218, 165, 32, 0.185);
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.banner {
+  padding: 1rem;
+  border-radius: 2rem;
+}
+
+.flex {
+  display: flex;
+}
+.flex-row {
+  flex-direction: row;
+}
+
+.w-3\/4 {
+  width: 75%;
+}
+
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.w-auto {
+  width: auto;
+}
+.m-2 {
+  margin: 1rem;
+}
+.itens:before {
+  content: '★';
+  margin-right: 0.5rem;
 }
