@@ -44,10 +44,62 @@ ul.products li:hover {
   background-color: rgba(187, 137, 10, 0.767);
   transition: all ease-in-out;
   transition-duration: 0.5s;
-  font-size: 1.5rem;
-  width: 40%;
+
+  transform: scale(1.1);
   position: relative;
   left: 0;
   z-index: 1;
   backdrop-filter: blur(20px);
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    font-size: 0.8rem;
+    width: 95%;
+  }
+
+  section div.flex-row,
+  section div.flex-row-reverse {
+    flex-direction: column;
+    align-items: center;
+  }
+  .my-10 {
+    margin: inherit 0;
+  }
+
+  .prose {
+    text-align: left;
+  }
+  ul.products.flex-row {
+    flex-direction: column;
+  }
+
+  ul.products {
+    padding: 0;
+    width: 90%;
+  }
+  ul.products,
+  ul.products li {
+    margin: 1rem 0;
+    width: 95%;
+    font-size: 1rem;
+  }
+  ul.products li:hover {
+    background-color: rgba(187, 137, 10, 0.767);
+    transition: all ease-in-out;
+    transition-duration: 0.5s;
+    transform: none;
+    position: relative;
+    left: 0;
+    z-index: 1;
+    font-size: 1rem;
+    backdrop-filter: blur(20px);
+  }
+
+  ul li p.description {
+    color: white;
+    font-weight: 400;
+    margin-left: 0rem;
+    text-align: start;
+  }
 }
