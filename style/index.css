@@ -226,6 +226,7 @@ iframe.banner {
     width: 100%;
     padding-left: 1rem;
     padding-right: 1rem;
+    font-size: 0.85rem;
   }
   .banner {
     width: 80%;
