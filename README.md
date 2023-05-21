@@ -38,8 +38,4 @@ After cloning the repository and opening the project files in your code editor, 
 
 This project is licensed under the [MIT License](LICENSE).
 
-## Contact
-
-For any questions or inquiries, please contact me at your-email@example.com.
-
 Happy coding! 😊
